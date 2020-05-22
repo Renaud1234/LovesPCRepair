@@ -1,29 +1,27 @@
-.hdr
+body
 {
-    background: #000;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    a{
-        color: #FFF;
-        font-size: 25px;
-    }
+    background: url(img/background.jpg);
 }
-.bdy
+h1, h2, h3, h4, h5, h6
 {
-    background: #0F0;
-    text-align: center;
-    h1{
-        color: #000;
-        font-size: 35px;
-    }
+    color: rgb(189, 189, 255);
 }
-.ftr
+.green
 {
-    background: #00F;
-    h2{
-        color: #FFF;
-        font-size: 10px;
-    }
+    color: rgb(128, 250, 128);
+}
+header
+{
+    background: rgba(0, 0, 0, 0.6);
+}
+p, ul, li
+{
+    color: silver;
+}
+
+.img-crcle
+{
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
 }
