@@ -26,18 +26,31 @@
                 <source src="audio1.ogg" type="audio/ogg">
                 Your browser doesn't support HTML5 audio elements
             </audio>
+            <div id="timer1" style="visibility:hidden">
+                test timer
+            </div>
             <p>
                 Welcome to Love's PC Repair
                 Explanation...
+                <br>
                 <input type="text" name="age" id="age" onchange="Age();" placeholder="Age: (25)">
                 <input type="text" name="year" id="year" onchange="Year();" placeholder="Year: (2001)">
+                <br>
+                <br>
+                <button type="button" onclick="And1();">Video 1</button>
+                <button type="button" onclick="And2();">Video 2</button>
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NQwjr1d5o30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <video src="https://www.youtube.com/embed/NQwjr1d5o30">
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-                Your browser doesn't support HTML5 videos
-            </video>
+            <div id="and1" style="display: none;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NQwjr1d5o30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <video src="https://www.youtube.com/embed/NQwjr1d5o30">
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser doesn't support HTML5 videos
+                </video> -->
+            </div>
+            <div id="and2" style="display: none;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bUMRMz31slo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
         <footer>
             <p>
