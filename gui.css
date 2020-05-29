@@ -2,7 +2,120 @@ body
 {
     background: url(img/background.jpg);
 }
-h1, h2, h3, h4, h5, h6
+
+header
+{
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    border-bottom: 5px solid #0F0F0F0F;
+    z-index: 100;
+    color: Black;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+#logo
+{
+    margin: 20px;
+    float: left;
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: Black;
+}
+
+nav
+{
+    float: right;
+    padding: 20px;
+}
+
+#menu-icon
+{
+    width: 40px;
+    height: 40px;
+    color: red;
+    display: none;
+}
+
+a:hover#menu-icon
+{
+    background: Red;
+    border-radius: 4px 4px 0 0;
+    color: yellow;
+}
+
+ul
+{
+    list-style: none;
+}
+
+li
+{
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+a
+{
+    color: blue;
+}
+.current
+{
+    color: white;
+    font-size: 30px;
+    background: Black;
+}
+
+@media only screen and (max-width: 640px)
+{
+    header
+    {
+        position: fixed;
+    }
+    #menu-icon
+    {
+        display: inline-block;
+        width: 100%;
+    }
+    nav, ul, nav:active ul
+    {
+        position: absolute;
+        padding: 20px;
+        background: black;
+        border: 5px solid blue;
+        right: 20px;
+        top: 60px;
+        width: 100%;
+        border-radius: 20px;
+        display: none;
+    }
+    nav li
+    {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        border: 4px solid black;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    nav:hover li
+    {
+        display: block;
+    }
+    a
+    {
+        color: black;
+        font-size: 25px;
+        font-family: fantasy;
+    }
+}
+
+/* h1, h2, h3, h4, h5, h6
 {
     color: rgb(189, 189, 255);
 }
@@ -11,21 +124,18 @@ h1, h2, h3, h4, h5, h6
     color: green;
     font-size: 27px;
 }
+
 .green
 {
     color: rgb(128, 250, 128);
-}
-header
-{
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 40px;
-}
-p, ul, li
+} */
+
+/* p
 {
     color: maroon;
-}
+} */
 
+/* 
 .img-crcle
 {
     height: 500px;
@@ -51,24 +161,4 @@ p, ul, li
     border-right: 50px solid;
     border-top: 100px solid transparent;
     background: rgba(255, 0, 0, 0.6);
-}
-
-.button
-{
-    background: red;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    color: whitesmoke;
-    margin: 10px 10px;
-}
-.button:hover
-{
-    background: black;
-    color: white;
-    cursor: crosshair;
-    border: 5px dotted red;
-}
+} */
