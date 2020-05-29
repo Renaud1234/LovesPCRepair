@@ -19,10 +19,16 @@
                 </ul>
             </nav>
         </header>
-        <!-- <div class="circle"></div>
-        <div class="triangle"></div> -->
-        <div>
+        <div class="bdy">
             <h3 class="title">Love's PC Repair</h3>
+            <p class="intro">
+                Welcome to Love's PC Repair <br>
+                Explanation... <br>
+                <br>
+                <input type="text" name="age" id="age" onchange="Age();" placeholder="Age: (25)">
+                &nbsp;
+                <input type="text" name="year" id="year" onchange="Year();" placeholder="Year: (2001)">
+            </p>
             <h5>On stop shop for your IT needs</h5>
             <img src="img/cpu.jpg" class="img-crcle">
             <br><br>
@@ -31,30 +37,51 @@
                 <source src="audio1.ogg" type="audio/ogg">
                 Your browser doesn't support HTML5 audio elements
             </audio>
+            <br>
+            <div class="cnt">
+                <div class="boxe">
+                    <img src="img/pc.png" class="bnr" alt="">
+                    <h1>
+                        Computer repairs!
+                    </h1>
+                    <p>
+                        Explanation paragraph
+                    </p>
+                </div>
+                <div class="boxe">
+                    <img src="img/phone.png" class="bnr" alt="">
+                    <h1>
+                        Phone repairs!
+                    </h1>
+                    <p>
+                        Explanation paragraph
+                    </p>
+                </div>
+                <div class="boxe">
+                    <img src="img/wifi.png" class="bnr" alt="">
+                    <h1>
+                        Wifi repairs!
+                    </h1>
+                    <p>
+                        Explanation paragraph
+                    </p>
+                </div>
+            </div>
+            <br>
             <div id="timer1" style="visibility:hidden">
-                test timer
-            </div>
-            <p>
-                Welcome to Love's PC Repair <br>
-                Explanation... <br>
-                <br>
-                <input type="text" name="age" id="age" onchange="Age();" placeholder="Age: (25)">
-                <input type="text" name="year" id="year" onchange="Year();" placeholder="Year: (2001)">
-                <br>
-                <br>
-                <button type="button" onclick="And1();">Video 1</button>
-                <button type="button" onclick="And2();">Video 2</button>
-            </p>
-            <div id="and1" style="display: none;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NQwjr1d5o30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <!-- <video src="https://www.youtube.com/embed/NQwjr1d5o30">
-                    <source src="movie.mp4" type="video/mp4">
-                    <source src="movie.ogg" type="video/ogg">
-                    Your browser doesn't support HTML5 videos
-                </video> -->
-            </div>
-            <div id="and2" style="display: none;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bUMRMz31slo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div style="text-align: center; margin-bottom: 25px;">
+                    <p>
+                        <button type="button" onclick="And1();">Video 1</button>
+                        <button type="button" onclick="And2();">Video 2</button>
+                        <br>
+                        <div id="and1" style="display: none;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/NQwjr1d5o30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div id="and2" style="display: none;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bUMRMz31slo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>    
+                    </p>
+                </div>
             </div>
         </div> 
         <footer>
@@ -63,17 +90,17 @@
                 Address <br>
                 Phone <br>
                 Email <br>
-                <a href="https://www.facebook.com">
+                <!-- <a href="https://www.facebook.com">
                     <img src="img/fbicon.png" alt="" width="20" height="16">
-                </a>
-                <a href="https://www.facebook.com">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
+                </a> -->
+                <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
             </p>
-            <a href="https://www.google.com">Google</a>
-            <ul>
-                <li>SiteMap</li>
-                <li>Contact</li>
+            <a href="https://www.google.com" id="google">Google</a>
+            <ul id="mnu">
+                <li><a href="#">SiteMap</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </footer>
     </body>
